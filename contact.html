@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Pricing | Metric UK</title>
+    <style>
+        :root {
+            --dark-bg: #090d16;
+            --card-bg: #ffffff;
+            --accent: #2563eb;
+            --accent-glow: rgba(37, 99, 235, 0.15);
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --light-bg: #f8fafc;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-bottom: 4rem;
+        }
+        nav {
+            background-color: var(--dark-bg);
+            padding: 1.2rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid #1e293b;
+        }
+        nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.2s ease;
+        }
+        nav a:hover {
+            color: #f1f5f9;
+        }
+        nav a.active {
+            color: white;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 4px;
+        }
+        .container {
+            max-width: 1050px;
+            margin: 4rem auto 0;
+            padding: 0 1.5rem;
+        }
+        h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .price-card {
+            background: var(--card-bg);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .price-card.featured {
+            border: 2px solid var(--accent);
+            box-shadow: 0 10px 25px -5px var(--accent-glow);
+        }
+        .price-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin: 1.5rem 0;
+        }
+        .price span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+        ul {
+            list-style: none;
+            margin: 0 auto 2.5rem;
+            color: var(--text-muted);
+            text-align: left;
+            max-width: 260px;
+        }
+        ul li {
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+        }
+        ul li::before {
+            content: "✓ ";
+            color: var(--accent);
+            font-weight: bold;
+        }
+        .btn {
+            display: block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.9rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.2s ease;
+            box-shadow: 0 4px 14px 0 var(--accent-glow);
+        }
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+        .btn-outline {
+            display: block;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            padding: 0.85rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .btn-outline:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ai.html">AI Integration</a>
+        <a href="infrastructure.html">Infrastructure</a>
+        <a href="consultancy.html">Consultancy</a>
+        <a href="contact.html" class="active">Pricing & Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Transparent Business Pricing</h2>
+        
+        <div class="grid">
+            <div class="price-card">
+                <div>
+                    <h3>IT Consultancy</h3>
+                    <div class="price">£75<span> / hour</span></div>
+                    <ul>
+                        <li>Infrastructure assessments</li>
+                        <li>CQC tech compliance alignment</li>
+                        <li>Jargon-free systems reviews</li>
+                    </ul>
+                </div>
+                <a href="mailto:nukage33@://gmail.com Consultancy Enquiry" class="btn-outline">Enquire Now</a>
+            </div>
+            
+            <div class="price-card featured">
+                <div>
+                    <h3>AI Integration</h3>
+                    <div class="price">Custom<span> / project</span></div>
+                    <ul>
+                        <li>Admin workflow automation</li>
+                        <li>Data insights & custom bots</li>
+                        <li>Full staff technical training</li>
+                    </ul>
+                </div>
+                <a href="mailto:nukage33@://gmail.com Integration Enquiry" class="btn">Get a Quote</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Metric UK. All rights reserved. Powered via GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
